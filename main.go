@@ -26,20 +26,4 @@ func main() {
 	}
 	log.Printf("Read Simple Message\n %v.", readSm)
 }
-func doSimpleMessage() *samplepb.SimpleMessage {
-	sm := &samplepb.SimpleMessage{
-		Id:         1234,
-		IsSimple:   true,
-		Name:       "This is simple message",
-		SampleList: []int32{1, 4, 7},
-	}
 
-	log.Printf("Simple message is %v\n", sm)
-
-	// renaming the Name property value of struct
-	sm.Name = "This is simple renamed messaged"
-
-	log.Printf("Message Id: %d\n", sm.GetId())
-
-	return sm
-}

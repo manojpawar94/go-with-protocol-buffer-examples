@@ -1,11 +1,30 @@
-package main
+package sample
 
 import (
 	"io/ioutil"
 	"log"
 
+	"github.com/manojpawar94/grpc/src/sample/samplepb"
 	"google.golang.org/protobuf/proto"
 )
+
+func doSimpleMessage() *samplepb.SimpleMessage {
+	sm := &samplepb.SimpleMessage{
+		Id:         1234,
+		IsSimple:   true,
+		Name:       "This is simple message",
+		SampleList: []int32{1, 4, 7},
+	}
+
+	log.Printf("Simple message is %v\n", sm)
+
+	// renaming the Name property value of struct
+	sm.Name = "This is simple renamed messaged"
+
+	log.Printf("Message Id: %d\n", sm.GetId())
+
+	return sm
+}
 
 func writeToFile(filename string, pb proto.Message) error {
 	out, err := proto.Marshal(pb)
