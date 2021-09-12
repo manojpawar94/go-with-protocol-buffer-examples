@@ -4,12 +4,12 @@ import (
 	"io/ioutil"
 	"log"
 
-	"github.com/manojpawar94/grpc/src/simple_example/samplepb"
+	"github.com/manojpawar94/grpc/src/simple_example/simplepb"
 	"google.golang.org/protobuf/proto"
 )
 
-func doSimpleMessage() *samplepb.SimpleMessage {
-	sm := &samplepb.SimpleMessage{
+func NewSimpleMessage() *simplepb.SimpleMessage {
+	sm := &simplepb.SimpleMessage{
 		Id:         1234,
 		IsSimple:   true,
 		Name:       "This is simple message",
