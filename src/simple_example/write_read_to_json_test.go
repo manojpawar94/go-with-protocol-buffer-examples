@@ -1,10 +1,10 @@
-package sample
+package simple_example
 
 import (
 	"log"
 	"testing"
 
-	"github.com/manojpawar94/grpc/src/sample/samplepb"
+	"github.com/manojpawar94/grpc/src/simple_example/samplepb"
 )
 
 func TestWriteToJsonFile(t *testing.T) {

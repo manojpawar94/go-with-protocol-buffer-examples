@@ -1,10 +1,10 @@
-package sample
+package simple_example
 
 import (
 	"io/ioutil"
 	"log"
 
-	"github.com/manojpawar94/grpc/src/sample/samplepb"
+	"github.com/manojpawar94/grpc/src/simple_example/samplepb"
 	"google.golang.org/protobuf/proto"
 )
 

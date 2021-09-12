@@ -1,8 +1,8 @@
 syntax = "proto3";
 
-package grpc.sample;
+package grpc.simple;
 
-option go_package = "./sample/samplepb";
+option go_package = "./simple_example/simplepb";
 
 message SimpleMessage {
     int32 id = 1;
