@@ -8,6 +8,6 @@ import (
 
 func NewEnumMessage() *enumpb.EnumMessage {
 	em := &enumpb.EnumMessage{Id: 1234, DayOfWeek: enumpb.Day_MONDAY}
-	log.Printf("The enum message is :%v\n", em)
+	log.Printf("The enum message is %v\n", em)
 	return em
 }
