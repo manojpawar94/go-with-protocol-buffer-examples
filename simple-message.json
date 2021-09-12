@@ -1,0 +1,10 @@
+{
+	"id": 1234,
+	"isSimple": true,
+	"name": "This is simple renamed messaged",
+	"sampleList": [
+		1,
+		4,
+		7
+	]
+}
